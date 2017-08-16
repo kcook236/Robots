@@ -1,0 +1,34 @@
+.thebigdiv{
+  display: flex;
+  width: 1300px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.results{
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+.avatar{
+  width: 250px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.name{
+  width: 100%;
+  text-align: center;
+  color: blue;
+}
+
+.jobInfo{
+  color: gray;
+  text-align: center;
+  width: 240px;
+}

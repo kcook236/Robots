@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/master.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="thumbnail">
+        <img class="headshot" src="{{profile.avatar}}" alt="">
+      </div>
+      <div class="personInfo">
+        <h1 class="nombre">{{profile.name}}</h1>
+      <h4 class="jobList">
+            {{profile.address.city}}, {{profile.address.country}} |
+            {{#profile.job}}{{.}}, {{/profile.job}}
+            {{^profile.job}}Available for Hire{{/profile.job}}
+            {{profile.company}}
+          </h4>
+          <h4>{{profile.email}} | {{profile.phone}}</h4>
+        </div>
+        <div class="education">
+          <h4 id="skillsTop">Skills</h4>
+          <h4 id="skillsList">{{profile.skills}}</h4>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

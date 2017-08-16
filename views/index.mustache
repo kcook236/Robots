@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/master.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="thebigdiv">
+    {{#data}}
+        <div class="results">
+          <a href="/users/{{id}}"> <img class = "avatar" src="{{avatar}}" alt=""> </a>
+          <a href="/users/{{id}}"> <h2 class = "name">{{name}}</h2> </a>
+          <h4 class="jobInfo">
+            {{#job}}{{.}}, {{/job}}
+            {{^job}}Available for Hire{{/job}}
+            {{company}}
+          </h4>
+        </div>
+      {{/data}}
+    </div>
+  </body>
+</html>
