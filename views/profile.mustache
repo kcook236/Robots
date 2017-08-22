@@ -10,23 +10,25 @@
 <body>
   <div class="page">
     <div class="thumbnail">
-        <img class="headshot" src="{{profile.avatar}}" alt="">
+        <img class="headshot" src="{{user.avatar}}" alt="">
       </div>
+      {{#user}}
       <div class="personInfo">
-        <h1 class="nombre">{{profile.name}}</h1>
+        <h1 class="nombre">{{name}}</h1>
       <h4 class="jobList">
-            {{profile.address.city}}, {{profile.address.country}} |
-            {{#profile.job}}{{.}}, {{/profile.job}}
-            {{^profile.job}}Available for Hire{{/profile.job}}
-            {{profile.company}}
+            {{address.city}}, {{address.country}} |
+            {{#job}}{{.}}, {{/job}}
+            {{^job}}Available for Hire{{/job}}
+            {{company}}
           </h4>
-          <h4>{{profile.email}} | {{profile.phone}}</h4>
+          <h4>{{email}} | {{phone}}</h4>
         </div>
         <div class="education">
           <h4 id="skillsTop">Skills</h4>
-          <h4 id="skillsList">{{profile.skills}}</h4>
+          <h4 id="skillsList">{{skills}}</h4>
         </div>
     </div>
+    {{/user}}
   </div>
 </body>
 
